@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+/* Table of Content
+==================================================
+    #Font-Face
+	#Reset & Basics
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Forms
+    #Tables
+	#Other */
+
+
+/* #Font-Face
+================================================== */
+@font-face {
+    font-family: 'segoewp-light';
+    src: url('../fonts/SegoeWP-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'SegoeWP-Light';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'black';
+    src: url('../fonts/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'semibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* #Reset & Basics 
+================================================== */
+    *{
+        margin:0;
+        padding:0;
+        border: 0;
+        vertical-align: baseline;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+    }
+
+    body { 
+    	background: #fff;
+        font-size: 14px;
+    	font-family: "regular", Helvetica, Arial, sans-serif;
+    	color: #444;
+    	-webkit-font-smoothing: antialiased; 
+        -ms-text-size-adjust: 100%;
+    	-webkit-text-size-adjust: 100%;
+    }
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		color: #181818;
+		font-family: "regular", Helvetica, Arial, sans-serif;
+		font-weight: normal;
+        text-rendering: optimizeLegibility; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+	   font-weight: inherit; 
+       font-family: inherit;
+       font-size: inherit; }
+	h1 { font-size: 22px; color:#000;}
+	h2 { font-size: 20px; color:#000; }
+	h3 { font-size: 18px; color:#000; }
+	h4 { font-size: 18px; color:#666; }
+	h5 { font-size: 16px; color:#666; }
+	h6 { font-size: 14px; color:#666; }
+
+	p { margin: 0 0 20px 0; text-rendering: optimizeLegibility; }
+	p img { margin: 0; }
+
+
+/* #Links
+================================================== */
+	a, 
+    a:visited,
+    a:hover, 
+    a:focus {  
+       text-decoration: none; 
+       outline: 0;
+       line-height: inherit;  }
+
+
+/* #Lists
+================================================== */
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	li { display: inline-block; 
+         *display: inline;
+         *zoom:1; }
+
+
+/* #Images
+================================================== */
+
+	img {
+		max-width: 100%;
+        width: auto\9;
+        width:auto;
+		height: auto;
+        vertical-align: middle;
+        border: 0;
+        -ms-interpolation-mode: bicubic; }
+        
+
+/* #Forms
+================================================== */
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 0 5px;
+		outline: none;
+		max-width: 100%;
+		display: block;
+		background: #fff;
+        vertical-align: baseline; 
+        *vertical-align: middle; }
+	
+	textarea {
+		min-height: 60px;
+        resize:none;
+        vertical-align: top;
+        overflow: auto; }
+            
+	input[type="checkbox"],
+    input[type="radio"] {
+		display: inline-block;
+        margin-right:5px; }
+        
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {	
+	  text-decoration: none;
+      text-transform: none;
+	  cursor: pointer;
+      border:0 none;
+	  line-height: normal;
+      -webkit-appearance: none; 
+      cursor: pointer; 
+      *overflow: visible;   }
+      
+      
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+	}      
+	
+/* #Tables
+================================================== */
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      vertical-align: middle;
+    }
+    
+    caption, th, td {
+      text-align: left;
+      font-weight: normal;
+      vertical-align: middle;
+      float:none !important;
+    }
+
+
+
+/* #Other
+================================================== */
+	:focus   { outline: 0; }
+    .left    { float: left !important; }
+    .right   { float: right !important; }
+    
+    sub, sup {
+      position: relative;
+      font-size: 75%;
+      line-height: 0;
+      vertical-align: baseline;
+    }
+    sup { top: -5px;}
+    sub { bottom: 2px;}
+    
+        
+     .clear { 
+      clear: both;}
+
