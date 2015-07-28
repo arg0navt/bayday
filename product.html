@@ -44,7 +44,13 @@
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/respond.min.js"></script>
     <script src="js/main.js"></script>
-    
+     <script type="text/javascript" src="js/jquery.cookie.js"></script> <!--required only if using cookies-->
+    <script type="text/javascript" src="js/jquery.accordion.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.accordion').accordion({defaultOpen: 'some_id'}); //some_id section1 in demo
+        });
+    </script>
 </head>
 
 
@@ -202,6 +208,7 @@
       <div class="page_card">
       <div class="limit">
       	<div class="column2">
+      	<div class="slider">
       		<div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url(images/slider_img/img4.png)"></div>
@@ -224,7 +231,7 @@
             <div class="swiper-slide" style="background-image:url(images/slider_img/img4.png)"></div>
             <div class="swiper-slide" style="background-image:url(images/slider_img/img4.png)"></div>
             <div class="swiper-slide" style="background-image:url(images/slider_img/img4.png)"></div>
-            <div class="swiper-slide"><iframe src="https://player.vimeo.com/video/133547455" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            <div class="swiper-slide" style="background-image:url(images/slider_img/215433c0dd7ba1876b6a4319a68c4a71.jpg)"></div>
             <div class="swiper-slide" style="background-image:url(images/slider_img/img4.png)"></div>
             <div class="swiper-slide" style="background-image:url(images/slider_img/img4.png)"></div>
             <div class="swiper-slide" style="background-image:url(images/slider_img/img4.png)"></div>
@@ -234,9 +241,455 @@
         </div>
     </div>
       	</div>
-      	<div class="column1"></div>
-      </div>	
+      	<a class="link_gallery" href="#">все фотографии</a>
+		  </div>
+      	<div class="column1">
+      		<div class="information_form">
+      			<form>
+      				<ul>
+      					<li>
+      					    <p>Рейтинг</p>
+      						<div class="stars set_star3">
+                                <span class="star1"></span>
+                                <span class="star2"></span>
+                                <span class="star3"></span>
+                                <span class="star4"></span>
+                                <span class="star5"></span>
+                            </div>
+      					</li>
+      					<li>
+      						<p>Заказов<br><span>356</span></p>
+      					</li>
+      					<li>
+      						<p>Город<br><span>Москва</span></p>
+      					</li>
+      					<li>
+      						<p>Стоимость<br><span>5 500 000 руб.</span></p>
+      					</li>
+      					<li>
+      						<p>Понравилось<br><span>1 456</span></p>
+      					</li>
+      					<li>
+      						<p>ID<br><span>436547</span></p>
+      					</li>
+      				</ul>
+      				<div class="inf_button">
+      					<div class="heart"></div>
+      					<div class="combo">
+                            <div class="current">20</div>
+                            <div class="arrow"></div>
+                            <ul>
+                                <li data-id="">10</li>
+                                <li data-id="">20</li>
+                                <li data-id="">30</li>
+                            </ul>
+                            <input type="text" value=" " />
+                        </div>
+                        <button>заказать</button>
+      				</div>
+      			</form>
+      			<div class="information_form_link">
+      			<a href="#">Скачать презентацию</a><a href="#">Отправить на почту</a>
+      			</div>
+      		</div>
+      		<div class="quick_order">
+      			<div class="text_in_the_form">
+      				<p>Быстрый заказ</p>
+      				<p>Наш специалист свяжется с вами через <span>60 секунд</span> после отправки заявки.</p>
+				</div>
+      				<form action="">
+      					<label>
+      						<p>Имя</p>
+      						<input type="text" placeholder="Ваше имя">
+      					</label>
+      					<label>
+      						<p>Телефон</p>
+      						<input type="text" placeholder="+7 ( ___ ) ___ - __ - __">
+      					</label>
+      					<label>
+      						<p>E-mail</p>
+      						<input type="text" placeholder="Ваш e-mail">
+      					</label>
+      					<label>
+      						<p>Дата</p>
+      						<input type="text" placeholder="дд.мм.гг.">
+      					</label>
+      					<label>
+      						<p>Комментарий</p>
+      						<input type="text" placeholder="Место проведения, время и пожелания">
+      					</label>
+      					<button>отправить заявку</button>
+      				</form>
+      			</div>
+      		</div>
+      	</div>
       </div>
+      <div class="page_card">
+      	<div class="limit">
+      	   <div class="column2">
+     	      <div class="description_of_the_offer">
+    	         <div class="description_of_the_offer_center">
+     	            <div class="text_description">
+     	      	       <h4>Описание предложения</h4>
+     	      	       <p>Департамент маркетинга и продаж, безусловно, тормозит популярный бизнес-план. Спонсорство директивно стабилизирует институциональный медиаплан. Потребительская база требовальна к креативу. Рекламная заставка порождена временем. Принцип восприятия изменяет нестандартный подход, работая над проектом. Концепция новой стратегии изменяет жизненный цикл продукции.</p>
+     	      	       <p>Косвенная реклама специфицирует продуктовый ассортимент. Направленный маркетинг, как принято считать, традиционно охватывает общественный комплексный анализ ситуации, повышая конкуренцию. Пак-шот индуцирует повторный контакт.</p>  
+     	            </div>
+      	            <div class="accordion" id="section2"><p><span></span> Шоу-программа</p> <div class="icon_delete"></div></div>
+                       <div class="container">
+                          <li>
+                          	<div class="checked_conteiner"></div>
+                          	<div class="picher_offer">
+                          		<img src="images/pich_offer.png" alt="">
+                          	</div>
+                          	<div class="title_offer">
+                          		<p>Шоу балет бабочки</p>
+                          		<div class="stars set_star3">
+                                <span class="star1"></span>
+                                <span class="star2"></span>
+                                <span class="star3"></span>
+                                <span class="star4"></span>
+                                <span class="star5"></span>
+                                </div>
+                          	</div>
+                          	<div class="category_offer">
+                          		<p>Танцевальные коллективы</p>
+                          	</div>
+                          	<div class="time_offer">
+                          		<div class="combo">
+                                   <div class="current">1 час</div>
+                                   <div class="arrow"></div>
+                                   <ul>
+                                      <li data-id="">1 час</li>
+                                      <li data-id="">2 час</li>
+                                      <li data-id="">3 час</li>
+                                   </ul>
+                                   <input type="text" value=" " />
+                                </div>
+                          	</div>
+                          	<div class="price_offer">
+                          		<p>50 000</p>
+                          	</div>
+                          	<div class="icon_delete"></div>
+                          	<div class="icon_edit"></div>
+                          </li>
+                          <li>
+                          	<div class="checked_conteiner"></div>
+                          	<div class="picher_offer">
+                          		<img src="images/pich_offer.png" alt="">
+                          	</div>
+                          	<div class="title_offer">
+                          		<p>Шоу балет бабочки</p>
+                          		<div class="stars set_star3">
+                                <span class="star1"></span>
+                                <span class="star2"></span>
+                                <span class="star3"></span>
+                                <span class="star4"></span>
+                                <span class="star5"></span>
+                                </div>
+                          	</div>
+                          	<div class="category_offer">
+                          		<p>Танцевальные коллективы</p>
+                          	</div>
+                          	<div class="time_offer">
+                          		<div class="combo">
+                                   <div class="current">1 час</div>
+                                   <div class="arrow"></div>
+                                   <ul>
+                                      <li data-id="">1 час</li>
+                                      <li data-id="">2 час</li>
+                                      <li data-id="">3 час</li>
+                                   </ul>
+                                   <input type="text" value=" " />
+                          	    </div>
+							</div>
+                          	<div class="price_offer">
+                          		<p>50 000</p>
+                          	</div>
+                          	<div class="icon_delete"></div>
+                          	<div class="icon_edit"></div>
+                          </li>
+                          <li>
+                          	<div class="checked_conteiner"></div>
+                          	<div class="picher_offer">
+                          		<img src="images/pich_offer.png" alt="">
+                          	</div>
+                          	<div class="title_offer">
+                          		<p>Шоу балет бабочки</p>
+                          		<div class="stars set_star3">
+                                <span class="star1"></span>
+                                <span class="star2"></span>
+                                <span class="star3"></span>
+                                <span class="star4"></span>
+                                <span class="star5"></span>
+                                </div>
+                          	</div>
+                          	<div class="category_offer">
+                          		<p>Танцевальные коллективы</p>
+                          	</div>
+                          	<div class="time_offer">
+                          		<div class="combo">
+                                   <div class="current">1 час</div>
+                                   <div class="arrow"></div>
+                                   <ul>
+                                      <li data-id="">1 час</li>
+                                      <li data-id="">2 час</li>
+                                      <li data-id="">3 час</li>
+                                   </ul>
+                                   <input type="text" value=" " />
+                          	    </div>
+							</div>
+                          	<div class="price_offer">
+                          		<p>50 000</p>
+                          	</div>
+                          	<div class="icon_delete"></div>
+                          	<div class="icon_edit"></div>
+                          </li>
+                       </div>
+                       <div class="accordion" id="section1"><p><span></span> Шоу-программа</p> <div class="icon_delete"></div></div>
+                       <div class="container">
+                          <li>
+                          	<div class="checked_conteiner"></div>
+                          	<div class="picher_offer">
+                          		<img src="images/pich_offer.png" alt="">
+                          	</div>
+                          	<div class="title_offer">
+                          		<p>Шоу балет бабочки</p>
+                          		<div class="stars set_star3">
+                                <span class="star1"></span>
+                                <span class="star2"></span>
+                                <span class="star3"></span>
+                                <span class="star4"></span>
+                                <span class="star5"></span>
+                                </div>
+                          	</div>
+                          	<div class="category_offer">
+                          		<p>Танцевальные коллективы</p>
+                          	</div>
+                          	<div class="time_offer">
+                          		<div class="combo">
+                                   <div class="current">1 час</div>
+                                   <div class="arrow"></div>
+                                   <ul>
+                                      <li data-id="">1 час</li>
+                                      <li data-id="">2 час</li>
+                                      <li data-id="">3 час</li>
+                                   </ul>
+                                   <input type="text" value=" " />
+                                </div>
+                          	</div>
+                          	<div class="price_offer">
+                          		<p>50 000</p>
+                          	</div>
+                          	<div class="icon_delete"></div>
+                          	<div class="icon_edit"></div>
+                          </li>
+                          <li>
+                          	<div class="checked_conteiner"></div>
+                          	<div class="picher_offer">
+                          		<img src="images/pich_offer.png" alt="">
+                          	</div>
+                          	<div class="title_offer">
+                          		<p>Шоу балет бабочки</p>
+                          		<div class="stars set_star3">
+                                <span class="star1"></span>
+                                <span class="star2"></span>
+                                <span class="star3"></span>
+                                <span class="star4"></span>
+                                <span class="star5"></span>
+                                </div>
+                          	</div>
+                          	<div class="category_offer">
+                          		<p>Танцевальные коллективы</p>
+                          	</div>
+                          	<div class="time_offer">
+                          		<div class="combo">
+                                   <div class="current">1 час</div>
+                                   <div class="arrow"></div>
+                                   <ul>
+                                      <li data-id="">1 час</li>
+                                      <li data-id="">2 час</li>
+                                      <li data-id="">3 час</li>
+                                   </ul>
+                                   <input type="text" value=" " />
+                          	    </div>
+							</div>
+                          	<div class="price_offer">
+                          		<p>50 000</p>
+                          	</div>
+                          	<div class="icon_delete"></div>
+                          	<div class="icon_edit"></div>
+                          </li>
+                          <li>
+                          	<div class="checked_conteiner"></div>
+                          	<div class="picher_offer">
+                          		<img src="images/pich_offer.png" alt="">
+                          	</div>
+                          	<div class="title_offer">
+                          		<p>Шоу балет бабочки</p>
+                          		<div class="stars set_star3">
+                                <span class="star1"></span>
+                                <span class="star2"></span>
+                                <span class="star3"></span>
+                                <span class="star4"></span>
+                                <span class="star5"></span>
+                                </div>
+                          	</div>
+                          	<div class="category_offer">
+                          		<p>Танцевальные коллективы</p>
+                          	</div>
+                          	<div class="time_offer">
+                          		<div class="combo">
+                                   <div class="current">1 час</div>
+                                   <div class="arrow"></div>
+                                   <ul>
+                                      <li data-id="">1 час</li>
+                                      <li data-id="">2 час</li>
+                                      <li data-id="">3 час</li>
+                                   </ul>
+                                   <input type="text" value=" " />
+                          	    </div>
+							</div>
+                          	<div class="price_offer">
+                          		<p>50 000</p>
+                          	</div>
+                          	<div class="icon_delete"></div>
+                          	<div class="icon_edit"></div>
+                          </li>
+                          <li>
+                          	<div class="add_offer"></div>
+                          </li>
+                       </div>
+                     <div class="add_accordion">
+                     	<div class="icon_add"></div>
+                     	<p>Добавить новую категорию</p>
+                     </div>  
+                 </div>
+                 <div class="result">
+                    <div class="result_center">
+                 	   <p>Итого:</p>
+                 	   <p>5 часов 40 минут</p>
+                 	   <p>2 500 000 руб.</p>
+                    </div>
+                 </div>
+                 <div class="offer_button">
+                 <div class="offer_button_center">
+                 	<div class="link_offer">
+                 		<a href="#">Скачать презентацию</a>
+                 		<a href="#">Отправить на почту</a>
+                 	</div>
+                 	<button>отправить</button>
+                 </div>
+                 </div>
+              </div>
+           </div>
+      	   <div class="column1">
+      	      <div class="advice">
+      	      	<div class="advice_center">
+      	      		<h3>Советы</h3>
+      	      		<h4>Общие советы</h4>
+      	      		<ul>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-1.png" alt="">
+      	      				</div>
+      	      				<p>Департамент маркетинга и продаж, безусловно, тормозит популярный бизнес-план. </p>
+      	      			</li>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-2.png" alt="">
+      	      				</div>
+      	      				<p>Спонсорство директивно стабилизирует институциональный медиаплан. </p>
+      	      			</li>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-3.png" alt="">
+      	      				</div>
+      	      				<p>Потребительская база требовальна к креативу. </p>
+      	      			</li>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-4.png" alt="">
+      	      				</div>
+      	      				<p>Рекламная заставка порождена временем. </p>
+      	      			</li>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-5.png" alt="">
+      	      				</div>
+      	      				<p>Принцип восприятия изменяет нестандартный подход, работая над проектом. </p>
+      	      			</li>
+      	      		</ul>
+      	      		<h4>Советы по выбору ведущего</h4>
+      	      		<ul>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-1.png" alt="">
+      	      				</div>
+      	      				<p>Департамент маркетинга и продаж, безусловно, тормозит популярный бизнес-план. </p>
+      	      			</li>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-2.png" alt="">
+      	      				</div>
+      	      				<p>Спонсорство директивно стабилизирует институциональный медиаплан. </p>
+      	      			</li>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-3.png" alt="">
+      	      				</div>
+      	      				<p>Потребительская база требовальна к креативу. </p>
+      	      			</li>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-4.png" alt="">
+      	      				</div>
+      	      				<p>Рекламная заставка порождена временем. </p>
+      	      			</li>
+      	      			<li>
+      	      				<div class="number">
+      	      					<img src="images/number-5.png" alt="">
+      	      				</div>
+      	      				<p>Принцип восприятия изменяет нестандартный подход, работая над проектом. </p>
+      	      			</li>
+      	      		</ul>
+      	      	</div>
+      	      </div>
+      	      <div class="reviews">
+      	      		<div class="title_reviews">
+      	      		<div class="prev_reviews"></div>
+      	      		<div class="next_reviews"></div>
+      	      			<h4>Отзывы</h4>
+      	      			<a href="#">отсавить отзыв</a>
+      	      		</div>
+      	      		<div class="reviews_block">
+      	      			<div class="picher_reviews">
+      	      				<img src="images/avatar.png" alt="">
+      	      			</div>
+      	      			<div class="text_reviews">
+      	      			<div class="rating">
+      	      				<img src="images/c2.png" alt="">
+      	      			</div>
+      	      				<h4>Екатерина Екатериновна</h4>
+      	      				<p>Креатив искажает креативный мониторинг активности, осознав маркетинг как часть производства.  <a href="#">показать отзывы</a></p>
+      	      			</div>
+      	      		</div>
+      	      		<div class="reviews_block">
+      	      			<div class="picher_reviews">
+      	      				<img src="images/avatar.png" alt="">
+      	      			</div>
+      	      			<div class="text_reviews">
+      	      			<div class="rating">
+      	      				<img src="images/c2.png" alt="">
+      	      			</div>
+      	      				<h4>Екатерина Екатериновна</h4>
+      	      				<p>Креатив искажает креативный мониторинг активности, осознав маркетинг как часть производства.  <a href="#">показать отзывы</a></p>
+      	      			</div>
+      	      		</div>
+      	      </div>
+      	   </div>
+      	</div>	
+      </div>
+	</div>
       <script src="js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->

@@ -23,7 +23,19 @@
 
 }
 @font-face {
-    font-family: 'SegoeWP-Light';
+    font-family: 'SegoeWP';
+    src: url('../fonts/SegoeWP.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoeWP-Semibold';
+    src: url('../fonts/SegoeWP-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'regular';
     src: url('../fonts/opensans-regular-webfont.eot');
     src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
