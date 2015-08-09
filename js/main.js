@@ -237,3 +237,26 @@ $(".internal_menu>.limit").animate({left:"-250px"},300);
 $(".show2").animate({left:"-250px"},500);
 });
 });
+$(document).ready(function(){
+$('#section1').click(function(e){
+$(this).toggleClass('accordion-close');
+$('#open1').toggle('300');
+});
+});
+$(document).ready(function(){
+$('#section2').click(function(e){
+$(this).toggleClass('accordion-close');
+$('#open2').toggle('300');
+});
+});
+$(document).ready(function(){
+$('.checked_conteiner').click(function(e){
+$(this).toggleClass('check_active');
+
+});
+});
+$(document).ready(function(){
+$('.inf_button .heart').click(function(e){
+$(this).toggleClass('heart_act');
+});
+});

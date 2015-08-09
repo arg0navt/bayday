@@ -44,13 +44,6 @@
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/respond.min.js"></script>
     <script src="js/main.js"></script>
-     <script type="text/javascript" src="js/jquery.cookie.js"></script> <!--required only if using cookies-->
-    <script type="text/javascript" src="js/jquery.accordion.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.accordion').accordion({defaultOpen: 'some_id'}); //some_id section1 in demo
-        });
-    </script>
 </head>
 
 
@@ -185,6 +178,7 @@
         	</ul>
 			</div>
       </div>
+    </div>
       <div class="card">
       	<div class="limit">
       		<div class="title_int">
@@ -334,8 +328,9 @@
      	      	       <p>Департамент маркетинга и продаж, безусловно, тормозит популярный бизнес-план. Спонсорство директивно стабилизирует институциональный медиаплан. Потребительская база требовальна к креативу. Рекламная заставка порождена временем. Принцип восприятия изменяет нестандартный подход, работая над проектом. Концепция новой стратегии изменяет жизненный цикл продукции.</p>
      	      	       <p>Косвенная реклама специфицирует продуктовый ассортимент. Направленный маркетинг, как принято считать, традиционно охватывает общественный комплексный анализ ситуации, повышая конкуренцию. Пак-шот индуцирует повторный контакт.</p>  
      	            </div>
-      	            <div class="accordion" id="section2"><p><span></span> Шоу-программа</p> <div class="icon_delete"></div></div>
-                       <div class="container">
+                  </div>
+      	            <div class="accordion accordion-open" id="section1"><p><span></span> Шоу-программа</p> <div class="icon_delete"></div></div>
+                       <div class="container" id="open1">
                           <li>
                           	<div class="checked_conteiner"></div>
                           	<div class="picher_offer">
@@ -445,8 +440,8 @@
                           	<div class="icon_edit"></div>
                           </li>
                        </div>
-                       <div class="accordion" id="section1"><p><span></span> Шоу-программа</p> <div class="icon_delete"></div></div>
-                       <div class="container">
+                       <div class="accordion accordion-open" id="section2"><p><span></span> Шоу-программа</p> <div class="icon_delete"></div></div>
+                       <div class="container" id="open2">
                           <li>
                           	<div class="checked_conteiner"></div>
                           	<div class="picher_offer">
@@ -557,14 +552,13 @@
                           </li>
                           <li>
                           	<div class="add_offer"></div>
+                          	<p class="result_price"><span>Подитог:</span> 900 00 руб.</p>
                           </li>
                        </div>
                      <div class="add_accordion">
-                     	<div class="icon_add"></div>
-                     	<p>Добавить новую категорию</p>
-                     </div>  
-                 </div>
-                 <div class="result">
+                     	<p><span class="icon_add"></span> Добавить новую категорию</p>
+                     </div>
+                     <div class="result">
                     <div class="result_center">
                  	   <p>Итого:</p>
                  	   <p>5 часов 40 минут</p>
@@ -579,8 +573,9 @@
                  	</div>
                  	<button>отправить</button>
                  </div>
-                 </div>
               </div>
+                 </div>
+
            </div>
       	   <div class="column1">
       	      <div class="advice">
@@ -661,6 +656,8 @@
       	      			<h4>Отзывы</h4>
       	      			<a href="#">отсавить отзыв</a>
       	      		</div>
+      	      		<div class="swiper-wrapper">
+      	      		<div class="swiper-slide">
       	      		<div class="reviews_block">
       	      			<div class="picher_reviews">
       	      				<img src="images/avatar.png" alt="">
@@ -685,11 +682,258 @@
       	      				<p>Креатив искажает креативный мониторинг активности, осознав маркетинг как часть производства.  <a href="#">показать отзывы</a></p>
       	      			</div>
       	      		</div>
+                        </div>
+                        <div class="swiper-slide">
+      	      		<div class="reviews_block">
+      	      			<div class="picher_reviews">
+      	      				<img src="images/avatar.png" alt="">
+      	      			</div>
+      	      			<div class="text_reviews">
+      	      			<div class="rating">
+      	      				<img src="images/c2.png" alt="">
+      	      			</div>
+      	      				<h4>Екатерина Екатериновна</h4>
+      	      				<p>Креатив искажает креативный мониторинг активности, осознав маркетинг как часть производства.  <a href="#">показать отзывы</a></p>
+      	      			</div>
+      	      		</div>
+      	      		<div class="reviews_block">
+      	      			<div class="picher_reviews">
+      	      				<img src="images/avatar.png" alt="">
+      	      			</div>
+      	      			<div class="text_reviews">
+      	      			<div class="rating">
+      	      				<img src="images/c2.png" alt="">
+      	      			</div>
+      	      				<h4>Екатерина Екатериновна</h4>
+      	      				<p>Креатив искажает креативный мониторинг активности, осознав маркетинг как часть производства.  <a href="#">показать отзывы</a></p>
+      	      			</div>
+      	      		</div>
+                        </div>
+                        <div class="swiper-slide">
+      	      		<div class="reviews_block">
+      	      			<div class="picher_reviews">
+      	      				<img src="images/avatar.png" alt="">
+      	      			</div>
+      	      			<div class="text_reviews">
+      	      			<div class="rating">
+      	      				<img src="images/c2.png" alt="">
+      	      			</div>
+      	      				<h4>Екатерина Екатериновна</h4>
+      	      				<p>Креатив искажает креативный мониторинг активности, осознав маркетинг как часть производства.  <a href="#">показать отзывы</a></p>
+      	      			</div>
+      	      		</div>
+      	      		<div class="reviews_block">
+      	      			<div class="picher_reviews">
+      	      				<img src="images/avatar.png" alt="">
+      	      			</div>
+      	      			<div class="text_reviews">
+      	      			<div class="rating">
+      	      				<img src="images/c2.png" alt="">
+      	      			</div>
+      	      				<h4>Екатерина Екатериновна</h4>
+      	      				<p>Креатив искажает креативный мониторинг активности, осознав маркетинг как часть производства.  <a href="#">показать отзывы</a></p>
+      	      			</div>
+      	      		</div>
+                        </div>
+                  </div>
       	      </div>
       	   </div>
       	</div>	
       </div>
+      <div class="page_card">
+          <div class="limit">
+              <div class="title_title">
+                 <div class="title_title_pr"></div>
+                 <div class="title_title_nx"></div>
+                  <h4>Дополнительные услуги</h4>
+              </div>
+              <div class="additional">
+              <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="photo_additional">
+                      <img src="images/titlt_photo.png" alt="">
+                  </div>
+                      <p>Огромный пылающий
+феерверк</p>
+                      <p>20 000 руб.</p>
+                      <a href="#">Добавить</a>
+              </div>
+              <div class="swiper-slide">
+                  <div class="photo_additional">
+                      <img src="images/titlt_photo.png" alt="">
+                  </div>
+                      <p>Огромный пылающий
+феерверк</p>
+                      <p>20 000 руб.</p>
+                      <a href="#">Добавить</a>
+              </div>
+              <div class="swiper-slide">
+                  <div class="photo_additional">
+                      <img src="images/titlt_photo.png" alt="">
+                  </div>
+                      <p>Огромный пылающий
+феерверк</p>
+                      <p>20 000 руб.</p>
+                      <a href="#">Добавить</a>
+              </div>
+              <div class="swiper-slide">
+                  <div class="photo_additional">
+                      <img src="images/titlt_photo.png" alt="">
+                  </div>
+                      <p>Огромный пылающий
+феерверк</p>
+                      <p>20 000 руб.</p>
+                      <a href="#">Добавить</a>
+              </div>
+              <div class="swiper-slide">
+                  <div class="photo_additional">
+                      <img src="images/titlt_photo.png" alt="">
+                  </div>
+                      <p>Огромный пылающий
+феерверк</p>
+                      <p>20 000 руб.</p>
+                      <a href="#">Добавить</a>
+              </div>
+              </div>
+              </div>
+          </div>
+      </div>
+      <div class="page_card">
+          <div class="limit">
+              <div class="title_title2">
+                 <div class="title_title_pr2"></div>
+                 <div class="title_title_nx2"></div>
+                  <h4>Другие предложения</h4>
+              </div>
+              <div class="additional2">
+              <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="images_additional" style="background: url(images/slider_img/img4.png) no-repeat center; background-size: cover;"></div>
+                  <div class="text_center_a">
+                      <a href="#">Lorem ipsum.</a>
+                      <h4>Lorem ipsum dolor.</h4>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam porro quos voluptatum aliquam quaerat, itaque.</p>
+                      <p class="price_a">Стоимость<br><span>2 500 000 руб.</span></p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="images_additional" style="background: url(images/slider_img/img4.png) no-repeat center; background-size: cover;"></div>
+                  <div class="text_center_a">
+                      <a href="#">Lorem ipsum.</a>
+                      <h4>Lorem ipsum dolor.</h4>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam porro quos voluptatum aliquam quaerat, itaque.</p>
+                      <p class="price_a">Стоимость<br><span>2 500 000 руб.</span></p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="images_additional" style="background: url(images/slider_img/img4.png) no-repeat center; background-size: cover;"></div>
+                  <div class="text_center_a">
+                      <a href="#">Lorem ipsum.</a>
+                      <h4>Lorem ipsum dolor.</h4>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam porro quos voluptatum aliquam quaerat, itaque.</p>
+                      <p class="price_a">Стоимость<br><span>2 500 000 руб.</span></p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="images_additional" style="background: url(images/slider_img/img4.png) no-repeat center; background-size: cover;"></div>
+                  <div class="text_center_a">
+                      <a href="#">Lorem ipsum.</a>
+                      <h4>Lorem ipsum dolor.</h4>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam porro quos voluptatum aliquam quaerat, itaque.</p>
+                      <p class="price_a">Стоимость<br><span>2 500 000 руб.</span></p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="images_additional" style="background: url(images/slider_img/img4.png) no-repeat center; background-size: cover;"></div>
+                  <div class="text_center_a">
+                      <a href="#">Lorem ipsum.</a>
+                      <h4>Lorem ipsum dolor.</h4>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam porro quos voluptatum aliquam quaerat, itaque.</p>
+                      <p class="price_a">Стоимость<br><span>2 500 000 руб.</span></p>
+                  </div>
+              </div>
+              </div>
+              </div>
+          </div>
+      </div>
+      <div class="baner_center">
+	<div class="limit">
+		<img src="images/banners/banner14.png" alt="">
 	</div>
+   </div>
+   <footer>
+      <div class="top_part">
+          <div class="limit">
+              <div class="column first">
+                  <div class="title">КОМПАНИЯ</div>
+                  <a href="">О нас</a>
+                  <a href="">Как мы работаем</a>
+                  <a href="">Вакансии</a>
+                  <a href="">Партнерство</a>
+                  <a href="">Контакты</a>
+                  <a href="">Договор оферты</a>
+              </div>
+              <div class="column second">
+                  <div class="title">Каталог</div>
+                  <a href="">Шоу программы</a>
+                  <a href="">Зарубежные популярные артисты</a>
+                  <a href="">Циркачи</a>
+                  <a href="">DJs</a>
+                  <a href="">Техническое Оснащение</a>
+                  <a href="">Подрядчики</a>
+              </div>
+              <div class="column third">
+                  <div class="title">Скидки и акции</div>
+                  <a href="">Шоу программы</a>
+                  <a href="">Зарубежные популярные артисты</a>
+                  <a href="">Циркачи</a>
+                  <a href="">DJs</a>
+                  <a href="">Техническое Оснащение</a>
+                  <a href="">Подрядчики</a>
+              </div>
+              <div class="column third">
+                  <div class="title">Скидки и акции</div>
+                  <a href="">Шоу программы</a>
+                  <a href="">Зарубежные популярные артисты</a>
+                  <a href="">Циркачи</a>
+                  <a href="">DJs</a>
+                  <a href="">Техническое Оснащение</a>
+                  <a href="">Подрядчики</a>
+              </div>
+              <div class="column fifth">
+                  <div class="title">КОНТАКТЫ</div>
+                  <div class="phone1">
+                    <span class="ico"></span>
+                    8 800 345 55 65
+                    <a href="">Перезвоните мне</a>
+                  </div>
+                  <div class="phone2"><span class="ico"></span>8 916 621 23 40</div>
+                  <div class="mail"><span class="ico"></span>mail@bayday.ru</div>
+              </div>
+              <div class="column sixth">
+                <a href=".block1" class="top_arrow scroll_link"></a><br />
+                <div class="age_label"></div>
+              </div>
+              <div class="clear"></div>
+          </div>
+      </div>
+      <div class="bottom_part">
+        <div class="limit">
+            <div class="copyright">© 2009-2015, Bayday.ru</div>
+            <div class="social_set">
+                <a href="" class="vk"></a>
+                <a href="" class="fb"></a>
+                <a href="" class="tw"></a>
+                <a href="" class="gp"></a>
+            </div>
+            <div class="developer">
+                Разработка дизайна
+                <a href=""><img src="images/developer_logo.png" alt="img" /></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+      </div>
+   </footer>
       <script src="js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
@@ -704,7 +948,30 @@
         centeredSlides: true,
         slidesPerView: 'auto',
         touchRatio: 0.2,
-        slideToClickedSlide: true
+        slideToClickedSlide: true,
+        loop:true,
+        loopedSlides: 5
+    });
+    var swiper = new Swiper('.additional', {
+        nextButton: '.title_title_nx',
+        prevButton: '.title_title_pr',
+        slidesPerView: 4,
+        paginationClickable: false,
+        spaceBetween: 76
+    });
+         var swiper = new Swiper('.reviews', {
+        nextButton: '.next_reviews',
+        prevButton: '.prev_reviews',
+        slidesPerView: 1,
+        paginationClickable: false,
+        spaceBetween: 0
+    });
+        var swiper = new Swiper('.additional2', {
+        nextButton: '.title_title_nx2',
+        prevButton: '.title_title_pr2',
+        slidesPerView: 4,
+        paginationClickable: false,
+        spaceBetween: 76
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;

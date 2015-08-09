@@ -1886,6 +1886,9 @@ body{
 	padding-left: 30px;
 	background: url(../images/pr.png) no-repeat left center;
 	font-family: "segoewp-light";
+    transition: .1s all linear;
+    -webkit-transition: .1s all linear;
+    -moz-transition: .1s all linear;
 }
 .ne_page>a{
 	color: #777777;
@@ -1893,12 +1896,16 @@ body{
 	padding-right: 30px;
 	background: url(../images/ne.png) no-repeat right center;
 	font-family: "segoewp-light";
+    float: right;
 }
 .ne_page{
 	position: absolute;
 	top: 50px;
 	right: 0;
 	width: 25%;
+    transition: .1s all linear;
+    -webkit-transition: .1s all linear;
+    -moz-transition: .1s all linear;
 }
 .title_center{
 	position: relative;
@@ -1917,7 +1924,7 @@ body{
 	margin: auto;
 	left: 0;
 	right: 0;
-	width: 552px;
+	width: 500px;
 	margin-top: 15px;
 }
 .crumbs a{
@@ -1933,6 +1940,9 @@ body{
 	color: #333333;
 	margin-right: 4px;
 	margin-left: 4px;
+}
+.card{
+    margin-top: -40px;
 }
 .page_card{
 	width: 100%;
@@ -1992,7 +2002,7 @@ body{
 	border: 1px solid #d9d9d9;
 	color: #afafaf;
 	font-size: 18px;
-	line-height: 46px;
+	line-height: 46px !important;
 	margin-top: 31px;
 }
 .information_form{
@@ -2082,6 +2092,9 @@ body{
     cursor: pointer;
     background: url(../images/hearts.png) 0 -5px no-repeat;
 	margin-left: 20px;
+}
+.heart_act{
+    background-position: -136px -5px !important;
 }
 .inf_button .combo {
     height: 51px;
@@ -2346,6 +2359,7 @@ body{
 	font-family: "segoewp-light";
 	font-size: 26px;
 	line-height: 36px;
+    padding-left: 35px;
 }
 .accordion-open {
 }
@@ -2432,6 +2446,7 @@ div.content ul li a {
 	-moz-transition:.2s all linear;
 	-ms-transition:.2s all linear;
 	cursor: pointer;
+    padding-right: 35px;
 }
 .icon_delete:hover{
 	background: url(../images/icon_delete_hover.png) #fff center no-repeat;
@@ -2456,6 +2471,7 @@ div.content ul li a {
 	width: 24px;
 	overflow: hidden;
 	cursor: pointer;
+    margin-left: 35px;
 }
 .picher_offer{
 	width: 79px;
@@ -2607,11 +2623,8 @@ div.content ul li a {
 	width: 22px;
 	height: 100%;
 	background: url(../images/icon_edit.png) #fff 0px 22px no-repeat;
-	padding-left: 50px;
 	transition:.2s all linear;
-	-webkit-transition:.2s all linear;
-	-moz-transition:.2s all linear;
-	-ms-transition:.2s all linear;
+
 	cursor: pointer;
 }
 .icon_edit:hover{
@@ -2619,11 +2632,11 @@ div.content ul li a {
 }
 .add_offer{
 	width: 79px;
-	height: 79px;
+	height: 100%;
 	background: url(../images/add_offer.png) no-repeat center;
-	margin-top: 14px;
 	cursor: pointer;
-	margin-left: 61px;
+	margin-left: 97px;
+    float: left;
 }
 .container>li:hover>.icon_edit{
 	background: url(../images/icon_edit.png) #e6ffff 0px 22px no-repeat;
@@ -2632,16 +2645,17 @@ div.content ul li a {
 	background: url(../images/icon_edit_hover.png) #e6ffff 0px 22px no-repeat;
 }
 .container>li:hover>.icon_delete{
-	background: url(../images/icon_delete.png) #e6ffff 0px 22px no-repeat;
+	background: url(../images/icon_delete.png) #e6ffff 34px 22px no-repeat;
 }
 .container>li:hover>.icon_delete:hover{
-	background: url(../images/icon_delete_hover.png) #e6ffff 0px 22px no-repeat;
+	background: url(../images/icon_delete_hover.png) #e6ffff 34px 22px no-repeat;
 }
 .container>li>.icon_delete{
-	background: url(../images/icon_delete.png) #fff 0px 22px no-repeat;
+	background: url(../images/icon_delete.png) #fff 34px 22px no-repeat;
+    width: 0;
 }
 .add_accordion{
-	width: 100%;
+	width: 97%;
 	height: 43px;
 	overflow: hidden;
 	background: url(../images/line.png) #fff repeat-x center;
@@ -2651,8 +2665,9 @@ div.content ul li a {
 	width: 21px;
 	height: 100%;
 	overflow: hidden;
+    padding-left: 24px;
+    margin-right: 25px;
 	background: url(../images/icon_add.png) no-repeat center;
-	float: left;
 }
 .add_accordion>p{
 	padding-left: 36px;
@@ -2668,7 +2683,7 @@ div.content ul li a {
 	background: #999999;
 	overflow: hidden;
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-bottom: 30px;
 }
 .result_center{
@@ -2912,6 +2927,255 @@ div.content ul li a {
 .text_reviews p a{
 	font-family: 'SegoeWP-Semibold';
 	color: #fd9438;
+}
+.title_title {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    background: url(../images/line.png) repeat-x center;
+    position: relative;
+    margin-top: 0;
+}
+.title_title h4{
+    text-align: center;
+    font-size: 50px;
+    color: #333333;
+    font-family: "segoewp-light";
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    background: #f2f2f2;
+    width: 580px;
+}
+.title_title_pr{
+    width: 40px;
+    height: 100%;
+    background: url(../images/reviews_prev.png) #f2f2f2 no-repeat 0px center;
+    position: absolute;
+    left:0;
+    cursor: pointer;
+}
+.title_title_nx{
+    width: 40px;
+    height: 100%;
+    background: url(../images/reviews_next.png) #f2f2f2 no-repeat right center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.additional{
+        margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.photo_additional{
+    width: 143px;
+    height: 181px;
+    overflow: hidden;
+    float: left;
+    margin-right: 26px;
+}
+.text_additional{
+    float: left;
+    background: #fff;
+    height: 181px;
+    overflow: hidden;
+
+}
+.text_additional>p:nth-of-type(1){
+    font-size: 16px;
+    color: #333333;
+    font-family: 'SegoeWP';
+    margin-top: 26px;
+    padding-left: 26px;
+}
+.additional{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.additional .swiper-slide {
+    background: #fff;
+}
+.additional .swiper-slide p:nth-of-type(1){
+    font-size: 16px;
+    color: #333333;
+    font-family: 'SegoeWP';
+    margin-top: 26px;
+}
+.additional .swiper-slide p:nth-of-type(2){
+    font-size: 16px;
+    color: #333333;
+    font-family: 'SegoeWP-Semibold';
+    margin-bottom: 28px;
+}
+.additional .swiper-slide a{
+    font-family: 'SegoeWP-Semibold';
+    padding-left: 30px;
+    background: url(../images/a.png) no-repeat left center;
+    color: #fd9438;
+}
+
+.title_title2 {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    background: url(../images/line.png) repeat-x center;
+    position: relative;
+    margin-top: 0;
+}
+.title_title2 h4{
+    text-align: center;
+    font-size: 50px;
+    color: #333333;
+    font-family: "segoewp-light";
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    background: #f2f2f2;
+    width: 520px;
+}
+.title_title_pr2{
+    width: 40px;
+    height: 100%;
+    background: url(../images/reviews_prev.png) #f2f2f2 no-repeat 0px center;
+    position: absolute;
+    left:0;
+    cursor: pointer;
+}
+.title_title_nx2{
+    width: 40px;
+    height: 100%;
+    background: url(../images/reviews_next.png) #f2f2f2 no-repeat right center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.additional2{
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+}
+.images_additional{
+    width: 100%;
+    height: 318px;
+    overflow: hidden;
+}
+.additional2 .swiper-slide{
+    background: #fff;
+    padding-bottom: 20px;
+}
+.text_center_a{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 25px;
+}
+.text_center_a a{
+    color: #a8a8a8;
+    display: block;
+    font-family: 'SegoeWP';
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.text_center_a h4{
+    font-family: 'SegoeWP';
+    color: #333333;
+    font-size: 26px;
+}
+.text_center_a .text{
+    font-size: 16px;
+    font-family: 'SegoeWP';
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: #333333;
+    text-align: left;
+}
+.text_center_a .price_a{
+    color: #a8a8a8;
+    display: block;
+    font-family: 'SegoeWP';
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.text_center_a .price_a span{
+    font-size: 20px;
+    font-family: 'SegoeWP-Semibold';
+    color: #333333;
+    margin-top: 15px;
+}
+.result_price{
+    float: right;
+    font-family: 'SegoeWP-Semibold';
+    font-size: 20px;
+    text-align: right;
+    margin-top: 35px;
+    margin-right: 26px;
+}
+.result_price span{
+    font-family: 'SegoeWP';
+    margin-right: 50px;
+    font-size: 16px;
+}
+.accordion{
+    cursor: pointer;
+}
+.bxslider1 li>img{
+    position: absolute;
+    top:0;
+}
+.photo_additional>img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.link_gallery:hover{
+    line-height: 46px;
+        background-color: rgba(0,0,0,.015);
+}
+.quick_order>form>button:hover {
+        background-color: #faaa64; }
+.offer_button_center>button:hover{
+    background-color: #faaa64;
+}
+.inf_button .heart:hover {
+      background-position: -68px -5px; }
+footer .top_part .column a{
+    font-size: 13px;
+}
+.text_center_a h4:hover{
+    color: #fd9438;
+}
+.add_accordion:hover>p{
+    color: #fd9438;
+}
+.check_active{
+    background: url(../images/che.png) no-repeat center;
+}
+.pr_page:hover>a{
+    background: url(../images/pr_h.png) no-repeat left center;
+    color: #fd9438;
+}
+.ne_page:hover>a{
+    background: url(../images/ne_h.png) no-repeat right center;
+    color: #fd9438;
+}
+.link_offer>a:hover{
+    color: #faaa64;
+}
+.information_form_link>a:hover{
+    color: #faaa64;
+}
+.additional .swiper-slide:hover{
+    box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+}
+.additional .swiper-slide a:hover{
+    color: #faaa64;
+}
+.opacityy{
+    opacity: 0;
 }
 /*-----------------------USE--------------------------- 
 footer {
