@@ -153,6 +153,7 @@
     .block5 .column.third a.black, .block5 .column.third a.hidden {margin-bottom:0;}
     .block8 a {width:48.5%;}
     .block1 img{
+		max-width: 1366px;
 		width: 1366px;
 		left:50%;
 		margin-left: -683px;
